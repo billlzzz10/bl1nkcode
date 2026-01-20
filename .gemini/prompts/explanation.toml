@@ -1,0 +1,28 @@
+# Explanation Prompts from PROMPT_ENGINEERING_BEST_PRACTICES.md
+
+[[prompts]]
+name = "explain-concept"
+description = "A template for explaining a technical concept in detail."
+template = """
+Explain the concept of `{{concept}}` for an audience of `{{audience_skill_level}}`.
+
+Please structure your explanation as follows:
+
+1.  **Simple Analogy (ELI5):**
+    Provide a simple, easy-to-understand analogy.
+
+2.  **Technical Definition:**
+    Give a more precise, technical definition.
+
+3.  **Real-World Use Case:**
+    Describe a practical, real-world scenario where `{{concept}}` is applied.
+
+4.  **Code Example:**
+    Provide a clear code example in `{{language}}` that demonstrates the concept.
+
+5.  **Common Misconceptions:**
+    List and clarify common misunderstandings about `{{concept}}`.
+
+6.  **Related Concepts:**
+    Briefly mention and differentiate from related technical concepts.
+"""

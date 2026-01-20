@@ -1,0 +1,70 @@
+# Generic Prompt Patterns from PROMPT_ENGINEERING_BEST_PRACTICES.md
+
+[[prompts]]
+name = "template-pattern"
+description = "A generic template for a well-structured prompt."
+template = """
+You are a [role].
+Your task is to [objective].
+
+Given:
+{{input}}
+
+Requirements:
+- [requirement 1]
+- [requirement 2]
+
+Output format:
+[specify structure]
+"""
+
+[[prompts]]
+name = "persona-pattern"
+description = "A template for activating a specific persona."
+template = """
+Act as a [expert type] with [years] of experience in [domain].
+You are known for [characteristics].
+Your communication style is [style].
+
+[Rest of prompt]
+"""
+
+[[prompts]]
+name = "refinement-pattern"
+description = "A template for asking the model to refine a previous answer."
+template = """
+[Initial prompt]
+
+Please refine your answer by:
+1. Adding more specific examples
+2. Addressing edge case X
+3. Explaining assumption Y
+"""
+
+[[prompts]]
+name = "comparison-pattern"
+description = "A template for comparing two or more items across multiple dimensions."
+template = """
+Compare and contrast [A] vs [B] in the following dimensions:
+- Performance
+- Ease of use
+- Scalability
+- Cost
+- Maintenance
+
+Provide specific examples for each dimension.
+"""
+
+[[prompts]]
+name = "constraint-pattern"
+description = "A template for providing a task with a set of constraints."
+template = """
+Given these constraints:
+- Constraint 1
+- Constraint 2
+- Constraint 3
+
+[Task description]
+
+If any constraint cannot be satisfied, explain why and suggest alternatives.
+"""

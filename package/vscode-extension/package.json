@@ -1,0 +1,20 @@
+{
+  "name": "@phoenix/vscode-extension",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "dev": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "@phoenix/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}

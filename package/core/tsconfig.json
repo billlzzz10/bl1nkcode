@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "paths": {
+      "@phoenix/semantic-core": ["../semantic-core/src/index.ts"],
+      "@phoenix/sdk": ["../sdk/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*"]
+}

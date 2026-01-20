@@ -1,7 +1,96 @@
-out
-dist
-node_modules
-.vscode-test/
+# ===================================================================
+# Phoenix Engine .gitignore
+# Version: 2.0 (Clean & Organized)
+# ===================================================================
+
+# 1. Dependencies
+# -------------------------------------------------------------------
+# ไม่ต้องสนใจ node_modules ในทุกระดับของโปรเจกต์
+**/node_modules
+# ไฟล์ Lock ที่สร้างโดย Package Manager ต่างๆ
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
+# 2. Build & Compilation Output
+# -------------------------------------------------------------------
+# โฟลเดอร์ผลลัพธ์จากการ Build/Compile ในทุกระดับ
+**/dist
+**/build
+**/out
+# ไฟล์ Package ของ VS Code Extension
 *.vsix
-_sandbox
+
+
+# 3. Logs & Runtime Data
+# -------------------------------------------------------------------
+# โฟลเดอร์และไฟล์ Log ทั้งหมด
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+# ไฟล์ที่เกี่ยวกับ Process ID และ Runtime
+*.pid
+*.pid.lock
+*.seed
+
+
+# 4. OS & System Generated Files
+# -------------------------------------------------------------------
+# ไฟล์ขยะที่สร้างโดย macOS, Windows, และ Linux
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# 5. Secrets & Environment Variables
+# -------------------------------------------------------------------
+# ไม่ต้อง Track ไฟล์ .env ทั้งหมด
 .env
+.env.*
+# แต่ให้ Track ไฟล์ตัวอย่าง .env.example เพื่อให้คนอื่นรู้ว่าต้องตั้งค่าอะไรบ้าง
+!/.env.example
+# ไม่ต้อง Track Private Keys โดยเด็ดขาด
+id_rsa
+id_ed25519
+*.pem
+
+
+# 6. IDE & Editor Configuration
+# -------------------------------------------------------------------
+# โฟลเดอร์ตั้งค่าของ JetBrains IDEs
+.idea/
+# โฟลเดอร์ตั้งค่าของ VS Code
+# แต่ให้ Track ไฟล์ตั้งค่าที่จำเป็นสำหรับทีม
+.vscode/*
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+
+
+# 7. Project-Specific Ignores (Phoenix Engine)
+# -------------------------------------------------------------------
+# สภาพแวดล้อมเสมือนของ Python
+.venv/
+# โฟลเดอร์ Cache ของโปรเจกต์
+.cache/
+# โฟลเดอร์ Cache ของ TurboRepo (ถ้ามี)
+.turbo/
+# ไฟล์ที่เกี่ยวกับ Gemini CLI ที่ไม่ควรอยู่ใน Git
+.gemini/mcp.json
+# โฟลเดอร์ที่สร้างโดย IDX (สภาพแวดล้อมพัฒนาของ Google)
+.idx/
+
+
+# 8. Temporary Files
+# -------------------------------------------------------------------
+# ไฟล์ชั่วคราวทั่วไป
+*.tmp
+*.swp
+

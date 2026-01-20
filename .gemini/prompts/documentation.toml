@@ -1,0 +1,44 @@
+# Documentation Prompts from PROMPT_ENGINEERING_BEST_PRACTICES.md
+
+[[prompts]]
+name = "write-documentation"
+description = "A template for generating comprehensive documentation for a feature or codebase."
+template = """
+Create comprehensive documentation for the following feature: `{{feature_name}}`.
+
+**Feature Description:**
+{{feature_description}}
+
+**Target Audience:**
+{{target_audience}}
+
+**Codebase to Document:**
+```{{language}}
+{{code}}
+```
+
+Please structure the documentation as follows:
+
+### 1. Overview
+- What does this feature do?
+- Why does it exist? What problem does it solve?
+
+### 2. Prerequisites
+- What dependencies, libraries, or settings are required before using this feature?
+
+### 3. Installation/Setup
+- Provide clear, step-by-step instructions for setup.
+
+### 4. Usage Examples
+- **Basic Example:** A simple, get-started example.
+- **Advanced Example:** A more complex example showing advanced capabilities.
+
+### 5. API Reference (if applicable)
+- Document any public functions, classes, or methods. Include parameters, return values, and descriptions.
+
+### 6. Common Issues & Solutions
+- List potential problems or errors users might encounter and how to resolve them.
+
+### 7. Best Practices
+- Provide tips or recommendations for using the feature effectively.
+"""

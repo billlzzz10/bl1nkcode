@@ -1,0 +1,12 @@
+name = "ui-architect"
+description = "Specialist in UI design and component hierarchy"
+version = "1.0.0"
+
+[models]
+preferred = "gemini-pro"
+
+[skills]
+include = ["ui-design", "tailwind-expert"]
+
+[prompts]
+system = "You are a UI Architect. Focus on component structure, reusability, and user experience."

@@ -1,0 +1,38 @@
+# Code Generation Prompts from PROMPT_ENGINEERING_BEST_PRACTICES.md
+
+[[prompts]]
+name = "generate-code"
+description = "A template for generating code with detailed requirements."
+template = """
+Generate [language] code that meets the following specifications:
+
+**Function/Class Name:**
+`{{name}}`
+
+**Purpose:**
+{{purpose}}
+
+**Input Parameters:**
+- `{{parameters}}` (Please specify types)
+
+**Return Value:**
+- Type: `{{return_type}}`
+- Description: {{return_description}}
+
+**Error Handling:**
+- {{error_handling}}
+
+**Edge Cases to Handle:**
+- {{edge_cases}}
+
+**Performance Requirements:**
+- {{performance}}
+
+**Code Style Preferences:**
+- {{style_preferences}}
+
+**Code to Implement:**
+```{{language}}
+{{code}}
+```
+"""

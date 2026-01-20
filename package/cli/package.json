@@ -1,0 +1,27 @@
+{
+  "name": "@phoenix/cli",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "phoenix": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.14",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "@phoenix/core": "workspace:*",
+    "@phoenix/semantic-core": "workspace:*",
+    "@phoenix/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}

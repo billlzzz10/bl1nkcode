@@ -1,0 +1,56 @@
+# Code Review Prompts from PROMPT_ENGINEERING_BEST_PRACTICES.md
+
+[[prompts]]
+name = "review-code"
+description = "A template for performing a comprehensive code review."
+template = """
+Review this [{{language}}] code for the following aspects. For each issue found, provide severity, an explanation, a fix recommendation, and a corrected code example.
+
+**Code to Review:**
+```{{language}}
+{{code}}
+```
+
+**Review Checklist:**
+
+1.  **Security Vulnerabilities:**
+    - Are there any potential injection points (SQL, Command, etc.)?
+    - Is user input properly sanitized and validated?
+    - Are there any hardcoded secrets or credentials?
+    - Does it follow secure coding best practices for `{{language}}`?
+
+2.  **Performance Issues:**
+    - Are there any inefficient algorithms or data structures (e.g., O(n^2) loops)?
+    - Can any operations be optimized for speed or memory usage?
+    - Are there potential memory leaks?
+
+3.  **Code Quality & Maintainability:**
+    - Is the code clear, readable, and well-documented?
+    - Are variable and function names descriptive?
+    - Is the code overly complex (high cyclomatic complexity)?
+    - Does it adhere to DRY principles?
+
+4.  **Best Practices Violations:**
+    - Does the code violate common `{{language}}` idioms or best practices?
+    - Are deprecated functions or libraries used?
+    - Is the code modular and well-structured?
+
+5.  **Edge Cases Not Handled:**
+    - How does the code handle null, empty, or invalid inputs?
+    - Are there any potential race conditions or concurrency issues?
+    - Does it handle potential exceptions gracefully?
+
+**Output Format:**
+
+For each issue identified, please use the following format:
+
+- **Severity:** [Critical / High / Medium / Low]
+- **File & Line:** [File path and line number]
+- **Issue:** [A brief description of the issue]
+- **Explanation:** [Detailed explanation of the problem and its impact]
+- **Recommendation:** [How to fix the issue]
+- **Corrected Code Example:**
+  ```{{language}}
+  [Corrected code snippet]
+  ```
+"""

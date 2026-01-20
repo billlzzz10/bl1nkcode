@@ -1,0 +1,5 @@
+packages:
+  - 'package/cli'
+  - 'package/core'
+  - 'package/semantic-core'
+  - 'package/sdk'
