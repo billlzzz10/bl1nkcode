@@ -62,7 +62,7 @@ importers:
     dependencies:
       '@modelcontextprotocol/sdk':
         specifier: ^1.25.2
-        version: 1.25.2(hono@4.11.4)(zod@3.25.76)
+        version: 1.25.2(hono@4.11.7)(zod@3.25.76)
       '@phoenix/sdk':
         specifier: workspace:*
         version: link:../sdk
@@ -212,13 +212,13 @@ packages:
       yargs: 17.7.2
     dev: false
 
-  /@hono/node-server@1.19.9(hono@4.11.4):
+  /@hono/node-server@1.19.9(hono@4.11.7):
     resolution: {integrity: sha512-vHL6w3ecZsky+8P5MD+eFfaGTyCeOHUIFYMGpQGbrBTSmNNoxv0if69rEZ5giu36weC5saFuznL411gRX7bJDw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
     dependencies:
-      hono: 4.11.4
+      hono: 4.11.7
     dev: false
 
   /@huggingface/jinja@0.2.2:
@@ -267,7 +267,7 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /@modelcontextprotocol/sdk@1.25.2(hono@4.11.4)(zod@3.25.76):
+  /@modelcontextprotocol/sdk@1.25.2(hono@4.11.7)(zod@3.25.76):
     resolution: {integrity: sha512-LZFeo4F9M5qOhC/Uc1aQSrBHxMrvxett+9KLHt7OhcExtoiRN9DKgbZffMP/nxjutWDQpfMDfP3nkHI4X9ijww==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -277,7 +277,7 @@ packages:
       '@cfworker/json-schema':
         optional: true
     dependencies:
-      '@hono/node-server': 1.19.9(hono@4.11.4)
+      '@hono/node-server': 1.19.9(hono@4.11.7)
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
       content-type: 1.0.5
@@ -646,8 +646,8 @@ packages:
         optional: true
     dev: false
 
-  /bare-fs@4.5.2:
-    resolution: {integrity: sha512-veTnRzkb6aPHOvSKIOy60KzURfBdUflr5VReI+NSaPL6xf+XLdONQgZgpYvUuZLVQ8dCqxpBAudaOM1+KpAUxw==}
+  /bare-fs@4.5.3:
+    resolution: {integrity: sha512-9+kwVx8QYvt3hPWnmb19tPnh38c6Nihz8Lx3t0g9+4GoIf3/fTgYwM4Z6NxgI+B9elLQA7mLE9PpqcWtOMRDiQ==}
     engines: {bare: '>=1.16.0'}
     requiresBuild: true
     peerDependencies:
@@ -1676,8 +1676,8 @@ packages:
       function-bind: 1.1.2
     dev: false
 
-  /hono@4.11.4:
-    resolution: {integrity: sha512-U7tt8JsyrxSRKspfhtLET79pU8K+tInj5QZXs1jSugO1Vq5dFj3kmZsRldo29mTBfcjDRVRXrEZ6LS63Cog9ZA==}
+  /hono@4.11.7:
+    resolution: {integrity: sha512-l7qMiNee7t82bH3SeyUCt9UF15EVmaBvsppY2zQtrbIhl/yzBTny+YUxsVjSjQ6gaqaeVtZmGocom8TzBlA4Yw==}
     engines: {node: '>=16.9.0'}
     dev: false
 
@@ -2888,7 +2888,7 @@ packages:
       pump: 3.0.3
       tar-stream: 3.1.7
     optionalDependencies:
-      bare-fs: 4.5.2
+      bare-fs: 4.5.3
       bare-path: 3.0.0
     transitivePeerDependencies:
       - bare-abort-controller
